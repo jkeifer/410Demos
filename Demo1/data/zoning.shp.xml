@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Metro Data Resource Center</origin>
+				<pubdate>1990</pubdate>
+				<title>Zoning</title>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>Zoning designation boundaries from local zoning ordinances. Contains zones from local jurisdictions as well as broader categories for the entire Metro Region.  Metro works with each jurisdiction and corrections were made by Metro where advised.</abstract>
+			<purpose>Used by planners and citizens to check zoning regulations.</purpose>
+			<supplinf>Some errors are likely to remain and the jurisdiction should be used as the definitive source for the actual zoning of a given property. In jurisdictions that use one map for comprehensive land use plan designations and zoning designations, the plan and zoning files are the same.The DRC does not attempt to keep current domain metadata for the zone  ;Local jurisdiction zoning designation  ;as part of the RLIS metadata. There are almost 1000 zoning designations in the 3 county area that are constantly changing. The recommendation is that if you need the description that you go directly to the local jurisdiction and get the definitions from the local zoning code. For example, for the City of Portlands zoning IG2 see the Zoning Code or index of symbols at http://www.portlandoregon.gov/bps/31612 or http://www.portlandoregon.gov/bps/article/65848.  The zone_class and zonegen_cl are maintained by the DRC. These are classifications of the local jurisdiction zoning codes. They allow for doing analysis across the region. In the IG2 example, the zonegen_cl will be IND industrial and one of the industrial zone_class classifications. These will be very good indicators for the description of the local jurisdiction zone.</supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20141023</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>Ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Quarterly</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-123.785577699</westbc>
+				<eastbc>-121.440498206</eastbc>
+				<northbc>46.3880499964</northbc>
+				<southbc>44.6838701483</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>Zoning</themekey>
+				<themekey>land use</themekey>
+				<themekey>zoning designations</themekey>
+				<themekey>zoning classifications</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Portland</placekey>
+				<placekey>Multnomah County</placekey>
+				<placekey>Washington County</placekey>
+				<placekey>Clackamas County</placekey>
+				<placekey>Oregon</placekey>
+			</place>
+		</keywords>
+		<accconst>RLIS subscribers (See the RLIS Product Terms and Conditions)</accconst>
+		<useconst>This database and GIS data are made available under the Open Database License (ODbL v1) and Database Content License (DbCL v1). See http://www.oregonmetro.gov/rlis-live.</useconst>
+		<browse>
+			<browsen>http://library.oregonmetro.gov/rlisdiscovery/browse_graphic/zoning.png</browsen>
+			<browsed>Color-coded generalized zoning designations with streets and rivers.</browsed>
+			<browset>PNG</browset>
+		</browse>
+	</idinfo>
+	<dataqual>
+		<logic></logic>
+		<complete></complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Registered to tax lots. Street center lines were digitized from aerial orthophotography at +/- 10 feet accuracy. Tax lots were fit to the street centerlines. Beaverton, Oregon City and Tigard planning areas were improved to +/- 5 feet accuracy. Multnomah County was created with coordinate geometry using better control.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<procstep>
+				<procdesc>Zoning information was collected from the 24 cities and three counties in the region.  The maps were digitized and check plots were reviewed by each of the jurisdictions.  Corrections were made on the digital copy.  The approx. 500 local zoning designations were captured on the map and a lookup table was created which categorized the local designations into 18 categories which are displayed on regional maps.</procdesc>
+				<procdate>1990</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>The REGPLAN and REGPLANGEN data items were renamed to PLAN_CLASS and PLANGEN_CL.</procdesc>
+				<procdate>199807</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>This layer was reprojected to the NAD83/91 projection (also known as HPGN) as part of a conversion of all RLIS map layers.</procdesc>
+				<procdate>199807</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>The standard regional zoning classification system was expanded from 21 to 26 classes.  The zone_cl.avl and plan_cl.avl (legend files) have all 26 classifications. This made the legend larger. The zone_gcl.avl and plan_gcl.avl are unchanged and still show the zones aggregated into 6 classes.</procdesc>
+				<procdate>199907</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Added MUC as a seventh generalized class.</procdesc>
+				<procdate>20010416</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Projection information (.prj file), compatible with ArcGIS 8.1, was added to the layer.</procdesc>
+				<procdate>20010715</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Areas that Portland maintains but exist in Multnomah Co. jurisdiction were changed to City and City code of Multnomah Co. and 51 respectively.  Updated the lut. info.</procdesc>
+				<procdate>20050815</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Expanded Zone_class domains to 44 regional classifications and exapnded Zonegen_cl to 9 generalized classifications.</procdesc>
+				<procdate>20051031</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Data now maintained as a SDE geodatabase.  Zoning is updated only when data is received from local city and county jurisdictions.  In areas where city an county data overlap, Metro assumes that city data is correct and overwrites any county data.</procdesc>
+				<procdate>20070724</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Zoning Updated for Beaverton(10/14/2010), Clackamas Co.(10/14/2010), Fairview(10/12/2010), Portland(10/14/2010), Tigard(10/13/2010), Tualatin(10/12/2010), Washington County (10/15/2010), West Lynn(10/15/2010) Wilsonville(10/12/2010).</procdesc>
+				<procdate>20101015</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Zoning Updated for Beaverton (1/18/2011), Clackamas Co.(1/10/2011), Fairview(12/29/2011), Gresham (1/5/2011), Happy Valley (1/10/2011), Hillsboro (1/12/2011), Milwaukie (1/18/2011), Oregon City (1/4/2011), Portland(1/18/2011), Tigard (1/12/2011), Washington County (1/14/2011), West Lynn(1/3/2011).</procdesc>
+				<procdate>20110202</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Zoning Updated for Beaverton (4/12/2011), Clackamas Co.(4/13/2011), Hillsboro (4/14/2011), Milwaukie (4/18/2011), Portland(4/28/2011), Sherwood (4/18/2011) Washington County (4/28/2011).</procdesc>
+				<procdate>20110503</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Culled out many sliver polygons and invalid zoning in streets for Washington County.  For County Zones within cities calculated [city] and [city-id] to be the city not the county.</procdesc>
+				<procdate>20110503</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Zoning Updated for Beaverton (7/6/2011), Clackamas Co.(7/25/2011), Hillsboro (7/7/2011), Milwaukie (7/18/2011), Oregon City (7/14/2011), Portland(7/28/2011), Tigard (7/7/2011), Troutdale 6/27/2011), Tualatin (7/1/2011), Washington County (6/27/2011)</procdesc>
+				<procdate>20110801</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Switched to a new zoning classification system that reflects code updates as interpreted by Metro Economist Dennis Yee,  Affects zoneclass and zonegen_cl.</procdesc>
+				<procdate>20110801</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated Zoning for: Beaverton (10/13/2011), Clackamas Co. (10/6/2011), Hillsboro 10/12/2011), Lake Oswego (10/4/2011), Oregon City (10/3/2011), Portland (10/14/2011), Tigard (10/12/2011), Washington County (10/14/2011)</procdesc>
+				<procdate>20111101</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated Zoning for: Beaverton (1/11/2012), Clackamas Co. (1/5/2012), Hillsboro 10/12/2011), Lake Oswego (12/29/2011), Milwaukie (1/13/2012), Oregon City (1/9/2012), Portland (1/17/2012), Tigard (1/10/2012), Washington County (1/25/2012), Wilsonville (1/11/2012)</procdesc>
+				<procdate>20120130</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated zoning for: Clackamas Co. (4/9/2012), Hilsboro (4/12/2012),  Lake Oswego (3/26/2012), Milwaukie (4/16/2012), Portland (4/16/2012), Tigard (4/9/2012), Washington Co. (4/13/2012)</procdesc>
+				<procdate>20120430</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated zoning for: Beaverton (7/12/2012), Clackamas Co, (7/12/2012), Hillsboro (7/12/2012), Lake Oswego (6/25/2012), Oregon City (6/20/2012), Portland (7/13/2012), Tigard (7/10/2012), Washington Co. (7/13/2012), Wilsonville (7/12/2012)</procdesc>
+				<procdate>20120730</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated zoning for: Beaverton (10/4/2012), Clackamas Co, (10/10/2012), Hillsboro (10/11/2012), Milwaukie (10/10/2012), Oregon City (10/11/2012), Portland (10/1/2012), Troutdale (10/12/2012)  Washington Co. (10/12/2012)</procdesc>
+				<procdate>20121031</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated zoning for: Clackamas Co, (1/15/2014), Hillsboro (1/15/2014), Lake Oswego (1/15/2014), Oregon City (1/15/2014), Portland (1/13/2014), Tigard (1/10/2014), Washington Co. (1/13/2014), Wilsonville (1/12/2014), Milwaukie (1/12/2014), Troutdale (1/15/2014)</procdesc>
+				<procdate>20140131</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Beavertom 4/9/2014, Forest Grove 3/25/2014, Gresham 4/11/2014, Hillsboro 4/10/2014, Lake Oswego 3/31/2014, Oregon City 4/4/2014, Portland 4/7/2014, Sherwood 4/14/2014, Tigard 4/14/2014, Troutdale 4/8/2014, Washington Co. 4/10/2014.</procdesc>
+				<procdate>20140424</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Updated Washington County, Clackamas County, Portland, Hillsboro, Oregon City, and Lake Oswego</procdesc>
+				<procdate>20141023</procdate>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf><esriterm Name="zoning"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="4" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance></plance>
+					<plandu>International foot</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>D_North_American_1983_HARN</horizdn>
+				<ellips></ellips>
+				<semiaxis></semiaxis>
+				<denflat></denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="zoning">
+			<enttyp>
+				<enttypl>Zoning.dbf</enttypl>
+				<enttypd>Description of the zoning polygon attributes.</enttypd>
+				<enttypds></enttypds>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr>
+				<attrlabl>City_no</attrlabl>
+				<attrdef>Census jurisdiction number code.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">CITY_NO</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Zone</attrlabl>
+				<attrdef>Local jurisdiction zoning designation.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">ZONE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">12</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Zone_class</attrlabl>
+				<attrdef>44 regional classifications into which the zoning is generalized.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>CC</edomv>
+						<edomvd>Central Commercial - allows a full range of commercial typically associated with CBD's and downtowns. More restrictive than general commercial in the case of large lot and highway-oriented uses. Encourages higher FAR uses including multi-story development.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>CG</edomv>
+						<edomvd>General Commercial - larger scale commercial districts, often with a more regional orientation for providing goods and services. Businesses offering a wider variety of goods and services (including large format retailers) are permitted in this district and include mid-rise office buildings, and highway and strip commercial zones.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>CN</edomv>
+						<edomvd>Neighborhood Commercial - small-scale commercial districts permitting retail and serice activities such as grocery stores and neighborhood service establishments that support the local residential community. Floor space and/or lot sizes are usually limited to between 5,000 to 10,000 square feet.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>CO</edomv>
+						<edomvd>Office Commercial - districts accommodating a range of low-rise offices; supports various community business establishments, professional and medical offices; typically as a buffer between residential areas and more intensive commercial districts.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>EFU</edomv>
+						<edomvd>Exclusive Farm Use - Exclusive Farm or Forest Use</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>FUD</edomv>
+						<edomvd>Future Urban Development - holding zones inside Metro UGB - planned for future residential or nonres. uses (assume 10 DU/net)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>IC</edomv>
+						<edomvd><![CDATA[Industrial Campus - Campus/Industrial/Business Park - permits light industrial & limited commercial uses on large/irregular parcels]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>IH</edomv>
+						<edomvd>Heavy Industrial - districts permit light industrial and intensive industrial activity such as bottling, chemical processing, heavy manufacturing and similar uses with noxious externalities.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>IL</edomv>
+						<edomvd>Light Industrial - districts permit warehousing and distribution facilities, light manufacturing, processing, fabrication or assembly. May allow limited commercial activities such as retail and service functions that support the businesses and workers in the district.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>IO</edomv>
+						<edomvd>Industrial Office - promotes multi-story light industrial office uses</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR1</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 15 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR2</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 20 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR3</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 25 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR4</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 30 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR5</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 35 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR6</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 45 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR7</edomv>
+						<edomvd>Multi-family - single family, townhouses, row houses permitted outright. Max density permitted is 85 units / net acre.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR1</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 0.3]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR10</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 12.5]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR2</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 0.5]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR3</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 0.7]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR4</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 1.25]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR5</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 1.5]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR6</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 1.75]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR7</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 2]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR8</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 3]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR9</edomv>
+						<edomvd><![CDATA[Mixed Use Commercial & Residential with FAR maximum of about 4]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>PF</edomv>
+						<edomvd>Public Facilities - allows government building, institutional and cultural uses such as museums.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>POS</edomv>
+						<edomvd>Parks and Open Space</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>RC</edomv>
+						<edomvd>Rural Commercial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>RRFU</edomv>
+						<edomvd>Rural Residential or Future Urban - residential uses permitted on rural lands (1 dwelling unit per lot) or areas designated for future urban development, typically lots are 10 or more acres</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR1</edomv>
+						<edomvd>Single family - detached housing with minimum lot size from 35,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR10</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 3,500 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR11</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 3,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR12</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 2,900 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR13</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 2,700 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR14</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 2,500 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR15</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 2,300 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR16</edomv>
+						<edomvd>Single family - detached or attached housing with lot sizes around 2,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR2</edomv>
+						<edomvd>Single family - detached housing with minimum lot size from 15,000 sq. ft. to a net acre</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR3</edomv>
+						<edomvd>Single family - detached housing with lot sizes from about 10,000 sq. ft. to 15,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR4</edomv>
+						<edomvd>Single family - detached housing with lot sizes around 9,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR5</edomv>
+						<edomvd>Single family - detached housing with lot sizes around 7,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR6</edomv>
+						<edomvd>Single family - detached housing with lot sizes around 6,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR7</edomv>
+						<edomvd>Single family - detached housing with lot sizes around 5,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR8</edomv>
+						<edomvd>Single family - detached housing with lot sizes around 4,500 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR9</edomv>
+						<edomvd>Single family - detached housing with lot sizes around 4,000 sq. ft.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">ZONE_CLASS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Zonegen_cl</attrlabl>
+				<attrdef>Nine generalized classifications into which the zoning is generalized.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>FUD</edomv>
+						<edomvd>Future Urban Development</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>IND</edomv>
+						<edomvd>Industrial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR</edomv>
+						<edomvd>Multi-family residential</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MUR</edomv>
+						<edomvd>Mixed-use residential</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>PF</edomv>
+						<edomvd>Public facilities</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">ZONEGEN_CL</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>City</attrlabl>
+				<attrdef>City name.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">CITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Area</attrlabl>
+				<attrdef>Area in square feet.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">AREA</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">18</atprecis><attscale Sync="TRUE">11</attscale></attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Metro Data Resource Center</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype></addrtype>
+					<address>600 NE Grand Ave.</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97232</postal>
+				</cntaddr>
+				<cntvoice>503 797-1742</cntvoice>
+				<cntfax>503 797-1909</cntfax>
+				<cntemail>drc@oregonmetro.gov</cntemail>
+			</cntinfo>
+		</distrib>
+		<distliab>The information in this file was derived from digital databases on Metro's GIS. Care was taken in the creation of this file. Metro cannot accept any responsibility for errors, omissions, or positional accuracy. There are no warranties, expressed or implied.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>Web Service</formname>
+					<transize>81</transize>
+				</digtinfo>
+				<digtopt>
+					<offoptn>
+						<offmedia>DVD or CD-ROM</offmedia>
+						<recfmt>ISO9660</recfmt>
+					</offoptn>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://www.oregonmetro.gov/rlisdiscovery</networkr>
+							</networka>
+						</computer>
+						<accinstr>Email drc@oregonmetro.gov or call 503-797-1742 for further instructions.</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>RLIS subscription required</fees>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd>20141023</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Metro Data Resource Center</cntorg>
+					<cntper>Justin Houk</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>600 NE Grand Ave.</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97232</postal>
+				</cntaddr>
+				<cntvoice>503 797-1669</cntvoice>
+				<cntfax>503 797-1909</cntfax>
+				<cntemail>justin.houk@oregonmetro.gov</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+	</metainfo>
+	<Binary>
+		<Thumbnail>
+			<Data EsriPropertyType="PictureX">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</Data>
+		</Thumbnail>
+	</Binary>
+	<dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.0.3397</envirDesc><dataLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">zoning</resTitle><presForm><PresFormCd value="005" Sync="TRUE"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd value="001" Sync="TRUE"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><Esri><DataProperties><itemProps><itemName Sync="TRUE">zoning</itemName><imsContentType Sync="TRUE">002</imsContentType><itemSize Sync="TRUE">0.000</itemSize><itemLocation><linkage Sync="TRUE">file://\\CH469C28\E$\4-510\Demos\Demo1\zoning.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><coordRef><type Sync="TRUE">Projected</type><geogcsn Sync="TRUE">GCS_North_American_1983_HARN</geogcsn><csUnits Sync="TRUE">Linear Unit: Foot (0.304800)</csUnits><projcsn Sync="TRUE">NAD_1983_HARN_StatePlane_Oregon_North_FIPS_3601_Feet_Intl</projcsn><peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.1'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_HARN_StatePlane_Oregon_North_FIPS_3601_Feet_Intl&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983_HARN&amp;quot;,DATUM[&amp;quot;D_North_American_1983_HARN&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Lambert_Conformal_Conic&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,8202099.737532808],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-120.5],PARAMETER[&amp;quot;Standard_Parallel_1&amp;quot;,44.33333333333334],PARAMETER[&amp;quot;Standard_Parallel_2&amp;quot;,46.0],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,43.66666666666666],UNIT[&amp;quot;Foot&amp;quot;,0.3048],AUTHORITY[&amp;quot;EPSG&amp;quot;,2913]]&lt;/WKT&gt;&lt;XOrigin&gt;-111333600&lt;/XOrigin&gt;&lt;YOrigin&gt;-98152500&lt;/YOrigin&gt;&lt;XYScale&gt;37675770.731007516&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.0032808398950131233&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;2913&lt;/WKID&gt;&lt;LatestWKID&gt;2913&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef></DataProperties><SyncDate>20150114</SyncDate><SyncTime>12432400</SyncTime><ModDate>20150114</ModDate><ModTime>12432400</ModTime></Esri><distInfo><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><mdHrLv><ScopeCd value="005" Sync="TRUE"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code="2913" Sync="TRUE"></identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">8.1.1</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="zoning"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20150114</mdDateSt></metadata>

@@ -1,0 +1,1666 @@
+<?xml version="1.0"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Metro Data Resource Center</origin>
+				<pubdate>1990</pubdate>
+				<title>Taxlots</title>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>County tax assessors tax lots with associated property data. Selected items from each county assessor's file are included and standardized for all three counties. The tax lot spatial features and data associated with the tax lot are compiled by Metro from existing records created and maintained by the local county assessment and taxation offices.</abstract>
+			<purpose>For mapping, property analysis, and planning. Care should be taken in the use and interpretation of these data. Not all columns are fully populated by the assessor and the data are standardized for consistency across the data layer.</purpose>
+			<supplinf><![CDATA[Tax lots, right-of-way outlines and tax account numbers as represented on county tax assessor hard copy maps. Each tax lot is a polygon with an associated tax lot number which is the "hook" to the county tax assessor's tabular data base. Selected items from each County Assessor's file are included. The tax lot spatial features are maintained by each county and delivered to Metro quarterly. <p>All data associated with the taxlot shape files are compiled by Metro from existing records created and maintained by county Assessment and Taxation offices. Care should be taken in the use and interpretation of these data. Not all columns are fully populated by the assessor. For example, the landuse and prop_code columns are useful for producing generalized land-use maps, but are not considered reliable for parcel specific applications. Field verification has not been done.]]></supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20141010</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>Ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Quarterly</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-123.785577699</westbc>
+				<eastbc>-121.440498206</eastbc>
+				<northbc>46.3880499964</northbc>
+				<southbc>44.6838701483</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>Taxlots</themekey>
+				<themekey>tax lots</themekey>
+				<themekey>parcels</themekey>
+				<themekey>assessor</themekey>
+				<themekey>cadastral</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Portland</placekey>
+				<placekey>Clackamas County</placekey>
+				<placekey>Multnomah County</placekey>
+				<placekey>Washington County</placekey>
+				<placekey>Oregon</placekey>
+			</place>
+		</keywords>
+		<accconst>RLIS subscribers (See the RLIS Product Terms and Conditions)</accconst>
+		<useconst>See the RLIS Product Terms and Conditions</useconst>
+		<browse>
+			<browsen>http://library.oregonmetro.gov/rlisdiscovery/browse_graphic/taxlots.png</browsen>
+			<browsed>Sample tax lot plot shaded by assessor's building value. The street names are also shown.</browsed>
+			<browset>PNG</browset>
+		</browse>
+	</idinfo>
+	<dataqual>
+		<logic></logic>
+		<complete></complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Please review the State of oregon <a href="http://www.oregon.gov/DAS/CIO/GEO/pages/standards/standards.aspx">Cadastral Data Exchange Standard</a>. Additional information about the source data for the RLIS Taxlots can be found at<a href="http://www.ormap.net/">Oregon Map </a> or contact the Surveyors office for Washington, Clackamas, or Multnomah Counties.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<procstep>
+				<procdesc>Portland General Electric (PGE) purchased aerial orthophotography with 10 foot horizontal control and digitized street center lines, tax lots and street names. This layer was produced on a CAD system as a visual background to their electrical system.</procdesc>
+				<procdate>1980</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Metro converted the PGE line work to polygons and added tax account numbers. David Evans and Associates was contractor. Beaverton, Oregon City and Tigard planning areas were improved to +/- 5 feet accuracy. Oregon Dept. of Revenue and Multnomah County Assessor provided CAD drawings of the area east of 42nd Ave. which had been entered using coordinate geometry and existing control from the cities and county.  This original RLIS dataset contained 553 sections.</procdesc>
+				<procdate>1990</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Metro converted 436 rural sections to polygon coverages and added tax account numbers. David Evans and Associates was contractor.  Tax assessor hard copy maps were scanned and registered to PGE base maps.</procdesc>
+				<procdate>1991</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Washington Co. rural taxlot linework created by Washington Co. using assessor maps.</procdesc>
+				<procdate>199301</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Washington County began maintaining this layer within their boundaries.</procdesc>
+				<procdate>199301</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Metro converted the coverage from NAD27 to NAD83 and from single to double precision.</procdesc>
+				<procdate>199401</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Clackamas County began maintaining this layer within their boundaries.</procdesc>
+				<procdate>1995</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Multnomah Co. rural taxlot linework created by Metro using 1:24000 USGS quad for control.</procdesc>
+				<procdate>199507</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Oregon Dept. of Revenue and Multnomah County Assessor provided tax lot CAD drawings of the remaining areas of the city of Portland.  This data was entered using coordinate geometry and existing control.  The city of Portland converted the CAD drawings to ARC/INFO format and furnished the information to Metro.</procdesc>
+				<procdate>199706</procdate>
+			</procstep>
+			<procstep>
+				<procdesc><![CDATA[A major upgrade was completed in Multnomah County.  The taxlots for Portland were re-mapped and updated. The horizontal positional accuracy was spatially corrected.<br>Columns storing X and Y coordinates of each taxlot were added, mainly for use by programmers.]]></procdesc>
+				<procdate>199710</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Clackamas County is gradually improving the horizontal ground control of the map by registering the map to the 1996 Spencer B. Gross digital orthophotography.  The photography has ground control of +/- 5 feet.</procdesc>
+				<procdate>1998</procdate>
+			</procstep>
+			<procstep>
+				<procdesc><![CDATA[In Multnomah County, the TLID field was changed to be the state ID number instead of the account number (R number). This made Multnomah County consistent with the other two counties. In cases where the state ID number was not available, the R number was supplied. Since the state ID number is wider in Multnomah County, the TLID field was changed to 15 characters wide instead of 12.<br>The Multnomah County portion was projected to NAD83/91 projection (also known as HPGN).]]></procdesc>
+				<procdate>199801</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>A field called Rno was added to the taxlots shapefile. Earlier the Multnomah County R number was used in the Tlid field. The R number is now in its own field for those users who still need it.</procdesc>
+				<procdate>199804</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>In Washington County, the technique used to populate OWNER2, OWNER3 and OWNERADDR was improved. Previously the address could appear in OWNER2, OWNER3 or OWNERADDR (depending on the first available field). Now all the address information is in OWNERADDR.</procdesc>
+				<procdate>199807</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>This layer was reprojected to the NAD83/91 projection (also known as HPGN) as part of a conversion of all RLIS map layers.</procdesc>
+				<procdate>199807</procdate>
+			</procstep>
+			<procstep>
+				<procdesc><![CDATA[Multnomah County Assessment and Taxation updated their computer system and are now using a new format for the tax lot identifier (TLID). Since the beginning of RLIS Lite, Metro has used the countys format for taxlot number, so we converted to the new 16-character number used by the county.<br>EXAMPLE: (^ represents a space). 1S2E06AB^^^00100. If the quarter section or quarter-quarter section letters are not used, a space is used as a place holder. There are three additional spaces following the quarter-quarter section letter. The 5-digit tax lot number uses leading zeros as place holders if the number is less than 10000.<br>Landuse data for Multnomah County was extracted from a new field, and may look slightly different than previous releases.]]></procdesc>
+				<procdate>200001</procdate>
+			</procstep>
+			<procstep>
+				<procdesc><![CDATA[The TLID format for Multnomah County was changed to be consistent with the format used by the Assessor. The 3 spaces between township, range, section and the taxlot id number was changed to 2 spaces and a hyphen.<br>Y2K issues required that the SALEDATE field be changed from a numeric field formatted YYMM to a character field formatted YYYYMM.]]></procdesc>
+				<procdate>200011</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Projection information (.prj file), compatible with ArcGIS 8.1, was added to the layer.</procdesc>
+				<procdate>20010715</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Incorporated Clackamas County COGO-ed taxlot data for Lake Oswego and West Linn.</procdesc>
+				<procdate>20011031</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Add XML metadata compatible with ArcCatalog 8.1</procdesc>
+				<procdate>20011031</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Clackamas County replaced data with COGOed areas in Lake Oswego and West Linn to Willamette River.</procdesc>
+				<procdate>2002</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Positional adjusts to taxlots per COGO data by County Surveyor in portions of Urban Washington County - (primarily Northern Hillsboro/Beaverton, SW Tigard and Sherwood).</procdesc>
+				<procdate>2002      ongoing</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Clackamas County replaced data in Oregon City with COGOed sections.</procdesc>
+				<procdate>20021101</procdate>
+			</procstep>
+			<procstep>
+				<procdesc><![CDATA[Multnomah County began maintaining taxlots within their boundaries.  In the past, Multnomah Countys taxlots were maintained by the city of Portland and Metro (Metro maintained land outside the city).  The taxlots will be more accurate since this layer will be maintained by the cartographers in the Assessment & Taxation office.  This quarter, the county provided taxlots for the rural portion of the county.]]></procdesc>
+				<procdate>200302</procdate>
+			</procstep>
+			<procstep>
+				<procdesc><![CDATA[<b>Tax Lots, multi-part features</b> - The tax lot layer now supports multi-part features, a feature that is composed of more than one physical part but only references one set of attributes in the database. Previously two or more polygons could represent one tax lot, e.g. tax lots that cross roads. When you select a multi-part tax lot, both parts of the tax lot will be selected, but only one row in the attribute table.<br><b>Tax Lots, multiple database records</b> - Multiple county assessor database records for a single tax lot are now included as a separate point data layer. These records previously were not included in RLIS Lite. The primary record is included as a row in the taxlot database and all the records are included in a new point data layer called TL_MANY. TL_MANY includes all attributes that are on the taxlot data layer and an additional attribute called TLID_LONG. TLID_LONG, also known as the state_id or map tax lot number, uniquely identifies each multiple record.]]></procdesc>
+				<procdate>200304</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Over the past eighteen months, Multnomah County gradually took over maintenance of taxlots for Multnomah County.  Metro now receives all taxlot shapes and Assessment and Taxation data directly from the county.</procdesc>
+				<procdate>200407</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Multnomah County discontinued using supplemental map sheets for condos and dropped the supplemental map number from the TLID (e.g. 1N1E33AD26-40001 is now shown as 1N1E33AD  -40001).  The county no longer maps condo footprints, but provides representational GIS polygons.  Condos which were originally drawn as building footprints will not change unless they are updated.</procdesc>
+				<procdate>20060331</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Added OWNERSTATE and SITEZIP fields and added ArcGIS attribute indexes.  Damascus is in processes of being COGOed.  Gaps and overlaps may appear during this process.</procdesc>
+				<procdate>20070331</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Counties began providing source data to Metro as shapefile or geodatabase (rather than coverage).  Metro began using ArcGIS Python scripts to merge shapes and calculate attributes.  County-supplied shapes were used without generalizing vertices, resulting in larger file size.</procdesc>
+				<procdate>20070331</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>To improve address data, the following fields were standardized using AccuMail software:  OWNERADDR, OWNERCITY, OWNERZIP, SITEADDR, SITECITY, SITEZIP. More ZIP4 and fewer null entries appear in the OWNERZIP and SITEZIP fields. Also, a JURIS_CITY field was added to show the city that has jurisdiction over each tax lot. SITECITY is the post office mailing city of the site, which does not necessarily match the city boundaries.</procdesc>
+				<procdate>20091115</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>OWNERADDR is no longer standardized by third party address software and is the original value produced by county assessors. STATECLASS was added and represents the State of Oregon land use class code. The lookup table stateclass.dbf contians the description of the codes provided by the local assessors offices. GIS_ACRES was added and is the area in acres calculated from the feature polygon using GIS software.</procdesc>
+				<procdate>20100726</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Fields that are indexed for RLISlite are OWNERSORT, OWNER1, TLIS, and SITEADDR</procdesc>
+				<procdate>20100805</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>OWNADDR and SITEADDR are no longer standardized using third party address software.  They contain the same values as in local assessors databases. Methods used to create TLID and multipart taxlots in Clackamas County have been modified to ensure that the item only contains 12 characters.  As a result more records have full attributes.</procdesc>
+				<procdate>20101015</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>The ORMAP standard ORTAXLOT attribute was added. For more information about ORMAP and the exchange standard see www.ormap.net.</procdesc>
+				<procdate>20130731</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>The process for populating the primary assessor record to the RLIS taxlot was reviewed. Confirmed that the query provided by Multnomah County was implmented in all steps in processing Multnomah County. Confirmed that similar steps were in place for Clackamas. Established process to sort Washington county assessor data on TLNO and RNO prior to populating the assessor data in the RLIS taxlots. This will populate the lowest RNO record on the RLIS taxlots for Washington ; County and all other records will be populated in tl_many.</procdesc>
+				<procdate>20140129</procdate>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf><esriterm Name="taxlots"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="4" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance></plance>
+					<plandu>International foot</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>D_North_American_1983_HARN</horizdn>
+				<ellips></ellips>
+				<semiaxis></semiaxis>
+				<denflat></denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="taxlots">
+			<enttyp>
+				<enttypl>Taxlots.dbf</enttypl>
+				<enttypd>Tax lot attributes provided by the three county assessors</enttypd>
+				<enttypds></enttypds>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr>
+				<attrlabl>Area</attrlabl>
+				<attrdef>Square footage of lot as calculated from the feature polygon</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">AREA</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">18</atprecis><attscale Sync="TRUE">5</attscale></attr>
+			<attr>
+				<attrlabl>Tlid</attrlabl>
+				<attrdef>Tax lot account number, also known as state_id or map tax lot number</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">TLID</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Rno</attrlabl>
+				<attrdef>Unique account or parcel number used by county assessor. In Multnomah Co., the 10-character number that is the altacctnum.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RNO</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Ownersort</attrlabl>
+				<attrdef>First five letters of owner's name</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNERSORT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Owner1</attrlabl>
+				<attrdef>Owner's name line</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNER1</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">32</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Owner2</attrlabl>
+				<attrdef>Owner's name line 2</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNER2</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">35</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Owner3</attrlabl>
+				<attrdef>Owner's name line 3</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNER3</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">35</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Owneraddr</attrlabl>
+				<attrdef>Owner's address</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNERADDR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">35</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Ownercity</attrlabl>
+				<attrdef>Owner's city</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNERCITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Ownerstate</attrlabl>
+				<attrdef>Owner's state</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNERSTATE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Ownerzip</attrlabl>
+				<attrdef>Owner's zip code</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OWNERZIP</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Sitestrno</attrlabl>
+				<attrdef>Site street number</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SITESTRNO</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Siteaddr</attrlabl>
+				<attrdef>Site address</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SITEADDR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">35</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Sitecity</attrlabl>
+				<attrdef>The site city as defined by the U.S. Postal Service for the site address. This does not reflect jurisdiction or city boundary city.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SITECITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">15</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Sitezip</attrlabl>
+				<attrdef>Site zip code</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SITEZIP</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Landval</attrlabl>
+				<attrdef>Real Market Value of land</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LANDVAL</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Bldgval</attrlabl>
+				<attrdef>Real Market Value of building</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">BLDGVAL</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Totalval</attrlabl>
+				<attrdef>Total Real Market Value (Landval + Bldgval)</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">TOTALVAL</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Bldgsqft</attrlabl>
+				<attrdef>Square footage of building(s)</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">BLDGSQFT</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">6</attwidth><atprecis Sync="TRUE">6</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>A_T_Acres</attrlabl>
+				<attrdef>Acreage of tax lot as shown in the County Assessor's database</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">A_T_ACRES</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">14</attwidth><atprecis Sync="TRUE">13</atprecis><attscale Sync="TRUE">2</attscale></attr>
+			<attr>
+				<attrlabl>Yearbuilt</attrlabl>
+				<attrdef>Year structure was built</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">YEARBUILT</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Prop_code</attrlabl>
+				<attrdef>Oregon Department of Revenue property classification for assessment codes. http://www.oregon.gov/dor/PTD/docs/303-437-07S3.pdf</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>003</edomv>
+						<edomvd>Misc, operating assessed</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>014</edomv>
+						<edomvd>Misc, residential zone, historical</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>015</edomv>
+						<edomvd>Misc, residential zone, open space</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>021</edomv>
+						<edomvd>Misc, commercial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>024</edomv>
+						<edomvd>Misc, commercial zone, historical</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>025</edomv>
+						<edomvd>Misc, commercial zone, open space</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>045</edomv>
+						<edomvd>Misc, tract land, open space</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>081</edomv>
+						<edomvd>Misc, recreation, improved, SHS</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>085</edomv>
+						<edomvd>Misc, recreation, open space</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>087</edomv>
+						<edomvd>Misc, recreation, timeshare</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>092</edomv>
+						<edomvd>Misc, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>100</edomv>
+						<edomvd>Residential land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>101</edomv>
+						<edomvd>Residential land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>102</edomv>
+						<edomvd>Residential condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>106</edomv>
+						<edomvd>Residential waterfront</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>109</edomv>
+						<edomvd>Residential exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>121</edomv>
+						<edomvd>Residential land, commercial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>122</edomv>
+						<edomvd>Residential land, commercial zone, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>128</edomv>
+						<edomvd>Residential land, commercial zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>131</edomv>
+						<edomvd>Rural homesite (EFU zone within water district)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>132</edomv>
+						<edomvd>Residential land, industrial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>14</edomv>
+						<edomvd>Residential land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>140</edomv>
+						<edomvd>Residential land, unzoned farm land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>141</edomv>
+						<edomvd>Residential land, unzoned farm land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>15</edomv>
+						<edomvd>Residential land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>150</edomv>
+						<edomvd>Residential land, EFU</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>151</edomv>
+						<edomvd>Res, EFU, Imp in a water dist</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>160</edomv>
+						<edomvd>Residential land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>161</edomv>
+						<edomvd>Residential land, misc, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>170</edomv>
+						<edomvd>Lakefront land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>171</edomv>
+						<edomvd>Lakefront land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>172</edomv>
+						<edomvd>Residential, not farm or forest</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>181</edomv>
+						<edomvd>Residential land, multiple special assignments, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>190</edomv>
+						<edomvd>Residential land, potential development, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>191</edomv>
+						<edomvd>Residential land, potential development, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>192</edomv>
+						<edomvd>Residential land, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>200</edomv>
+						<edomvd>Commercial land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>201</edomv>
+						<edomvd>Commercial land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>202</edomv>
+						<edomvd>Commercial, vacant, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>206</edomv>
+						<edomvd>Commercial, vacant, waterfront</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>211</edomv>
+						<edomvd>Commercial land, residential zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>213</edomv>
+						<edomvd>Commercial land, residential zone, state responsibility</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>221</edomv>
+						<edomvd>Commercial land, commercial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>228</edomv>
+						<edomvd>Commercial land, commercial zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>230</edomv>
+						<edomvd>Commercial land, industrial zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>231</edomv>
+						<edomvd>Commercial land, industrial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>232</edomv>
+						<edomvd>Commercial land, industrial zone, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>238</edomv>
+						<edomvd>Commercial land, industrial zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>24</edomv>
+						<edomvd>Commercial land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>24</edomv>
+						<edomvd>Commercial land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>240</edomv>
+						<edomvd>Commercial land, unzoned farm land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>241</edomv>
+						<edomvd>Commercial land, unzoned farm land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>25</edomv>
+						<edomvd>Commercial land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>25</edomv>
+						<edomvd>Commercial land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>250</edomv>
+						<edomvd>Commercial land, EFU zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>251</edomv>
+						<edomvd>Commercial land, unzoned farm land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>260</edomv>
+						<edomvd>Commercial land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>261</edomv>
+						<edomvd>Commercial land, misc, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>270</edomv>
+						<edomvd>Commercial land, permanent farm use disqualification, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>271</edomv>
+						<edomvd>Commercial land, permanent farm use disqualification, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>279</edomv>
+						<edomvd>Commercial land, permanent farm use disqualification, manufactured</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>281</edomv>
+						<edomvd>Commercial land, multiple special assignments, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>290</edomv>
+						<edomvd>Commercial land, potential development, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>291</edomv>
+						<edomvd>Commercial land, potential development, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>292</edomv>
+						<edomvd>Commercial land, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Industrial land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>300</edomv>
+						<edomvd>Industrial land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>301</edomv>
+						<edomvd>Industrial land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>303</edomv>
+						<edomvd>Department of Revenue appraised industrial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>311</edomv>
+						<edomvd>Industrial land, residential zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>313</edomv>
+						<edomvd>Industrial land, residential zone, state responsibility</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>321</edomv>
+						<edomvd>Industrial land, commercial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>323</edomv>
+						<edomvd>Industrial land, commercial zone, state responsibility</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>331</edomv>
+						<edomvd>Industrial land, industrial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>340</edomv>
+						<edomvd>Industrial land, unzoned farm land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>341</edomv>
+						<edomvd>Industrial land, unzoned farm land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>343</edomv>
+						<edomvd>Industrial land, unzoned farm land, state responsibility</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>348</edomv>
+						<edomvd>Industrial land, unzoned farm land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>351</edomv>
+						<edomvd>Industrial land, EFU, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>360</edomv>
+						<edomvd>Industrial land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>361</edomv>
+						<edomvd>Industrial land, misc, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>370</edomv>
+						<edomvd>Industrial land, permanent farm use disqualification, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>371</edomv>
+						<edomvd>Industrial land, permanent farm use disqualification, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>379</edomv>
+						<edomvd>Industrial land, permanent farm use disqualification, manufactured</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>381</edomv>
+						<edomvd>Industrial land, multiple special assignments, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>382</edomv>
+						<edomvd>Industrial land, multiple special assignments, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>390</edomv>
+						<edomvd>Industrial land, potential development, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>391</edomv>
+						<edomvd>Industrial land, potential development, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>392</edomv>
+						<edomvd>Industrial land, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>399</edomv>
+						<edomvd>Industrial land, potential development, manufactured structure</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>400</edomv>
+						<edomvd>Tract land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>401</edomv>
+						<edomvd>Tract land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>431</edomv>
+						<edomvd>Tract land, industrial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>440</edomv>
+						<edomvd>Tract land, unzoned farm land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>441</edomv>
+						<edomvd>Tract land, unzoned farm land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>45</edomv>
+						<edomvd>Tract land, EFU</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>450</edomv>
+						<edomvd>Tract land, EFU, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>451</edomv>
+						<edomvd>Tract land, EFU, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>460</edomv>
+						<edomvd>Tract land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>461</edomv>
+						<edomvd>Tract land, misc, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>470</edomv>
+						<edomvd>Lakefront tract land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>471</edomv>
+						<edomvd>Lakefront tract land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>479</edomv>
+						<edomvd>Tract land, permanent farm use disqualification, manufactured struc</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>490</edomv>
+						<edomvd>Tract land, potential development, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>491</edomv>
+						<edomvd>Tract land, potential development, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>492</edomv>
+						<edomvd>Tract land, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>500</edomv>
+						<edomvd>Farm land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>501</edomv>
+						<edomvd>Farm land - limited by ownership rights (e.g. easements)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>502</edomv>
+						<edomvd>Zoned farm land (EFU</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>503</edomv>
+						<edomvd>Unzoned farm property</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>540</edomv>
+						<edomvd>Non EFU farmland vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>541</edomv>
+						<edomvd>Non EFU farmland improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>542</edomv>
+						<edomvd>Farm land, unzoned farm land, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>544</edomv>
+						<edomvd>Farm land, unzoned farm land, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>546</edomv>
+						<edomvd>Farm land, unzoned farm land, waterfront</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>550</edomv>
+						<edomvd>EFU farmland vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>551</edomv>
+						<edomvd>EFU farmland improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>560</edomv>
+						<edomvd>Farm land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>561</edomv>
+						<edomvd>Farm land, misc, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>571</edomv>
+						<edomvd>Farm land, permanent farm use disqualification, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>572</edomv>
+						<edomvd>Farm land, permanent farm use disqualification, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>573</edomv>
+						<edomvd>Farm land, permanent farm use disqualification, state responsibilit</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>574</edomv>
+						<edomvd>Farm land, permanent farm use disqualification, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>575</edomv>
+						<edomvd>Farm land, permanent farm use disqualification, taxable leased</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>576</edomv>
+						<edomvd>Farm land, permanent farm use disqualification, waterfront</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>592</edomv>
+						<edomvd>Farm land, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>594</edomv>
+						<edomvd>Farm land, potential development, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>600</edomv>
+						<edomvd>Forest land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>601</edomv>
+						<edomvd>Forest land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>610</edomv>
+						<edomvd>Forest land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>640</edomv>
+						<edomvd>Designated forest land and-or SWO vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>641</edomv>
+						<edomvd>Designated forest land and-or SWO improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>642</edomv>
+						<edomvd>Forest land, unzoned farm land, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>644</edomv>
+						<edomvd>Forest land, unzoned farm land, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>646</edomv>
+						<edomvd>Forest land, unzoned farm land, waterfront</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>648</edomv>
+						<edomvd>Forest land, unzoned farm land, misc</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>660</edomv>
+						<edomvd>Reforest land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>661</edomv>
+						<edomvd>Reforest land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>671</edomv>
+						<edomvd>Forest land, permanent farm use disqualification, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>672</edomv>
+						<edomvd>Forest land, permanent farm use disqualification, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>673</edomv>
+						<edomvd>Forest land, permanent farm use disqualification, state responsibil</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>674</edomv>
+						<edomvd>Forest land, permanent farm use disqualification, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>677</edomv>
+						<edomvd>Forest land, permanent farm use disqualification, mobile home parks</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>678</edomv>
+						<edomvd>Forest land, permanent farm use disqualification, misc</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>680</edomv>
+						<edomvd>Forest land, misc. special assessment</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>681</edomv>
+						<edomvd>Forest land, misc. special assessment, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>700</edomv>
+						<edomvd>Multiple housing land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>701</edomv>
+						<edomvd>Multiple housing, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>707</edomv>
+						<edomvd>Manufactured structure park</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>711</edomv>
+						<edomvd>Multiple-family land, residential zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>721</edomv>
+						<edomvd>Multiple-family land, commercial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>728</edomv>
+						<edomvd>Multiple-family land, commercial zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>731</edomv>
+						<edomvd>Multiple-family land, industrial zone, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>740</edomv>
+						<edomvd>Multiple-family land, unzoned farm land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>741</edomv>
+						<edomvd>Multiple-family land, unzoned farm land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>751</edomv>
+						<edomvd>Multiple-family land, EFU, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>760</edomv>
+						<edomvd>Multiple-family land, misc, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>761</edomv>
+						<edomvd>Multiple-family land, misc, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>768</edomv>
+						<edomvd>Multiple-family land, misc</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>770</edomv>
+						<edomvd>Multiple-family land, permanent farm use disqualification, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>771</edomv>
+						<edomvd>Multiple-family land, permanent farm use disqualification, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>779</edomv>
+						<edomvd>Multiple-family land, permanent farm use disqualification, manufact</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>781</edomv>
+						<edomvd>Multiple-family land, multiple special assignments, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>792</edomv>
+						<edomvd>Multiple-family land, potential development, condominium</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>800</edomv>
+						<edomvd>Recreation land, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>801</edomv>
+						<edomvd>Recreation land, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>81</edomv>
+						<edomvd>Recreation land, residential zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>810</edomv>
+						<edomvd>Recreation land, residential zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>831</edomv>
+						<edomvd>Summer home on government owned land</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>85</edomv>
+						<edomvd>Recreation land, EFU zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>850</edomv>
+						<edomvd>Recreation land, EFU zone</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>87</edomv>
+						<edomvd>Recreation land, not farm or forest use</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>870</edomv>
+						<edomvd>Recreation land, not farm or forest use</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>900</edomv>
+						<edomvd>Exempt, student housing, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>901</edomv>
+						<edomvd>Exempt, student housing, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>905</edomv>
+						<edomvd>Exempt, student housing, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>910</edomv>
+						<edomvd>Exempt, church, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>915</edomv>
+						<edomvd>Exempt, church, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>92</edomv>
+						<edomvd>Exempt, school, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>920</edomv>
+						<edomvd>Exempt, school, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>921</edomv>
+						<edomvd>Exempt, school, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>925</edomv>
+						<edomvd>Exempt, school, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>935</edomv>
+						<edomvd>Exempt, cemetery, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>940</edomv>
+						<edomvd>Exempt, city, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>945</edomv>
+						<edomvd>Exempt, city, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>946</edomv>
+						<edomvd>Exempt, city, Native American holdings</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>947</edomv>
+						<edomvd>Exempt, city, misc</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>949</edomv>
+						<edomvd>Exempt, city, manufactured structure</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>950</edomv>
+						<edomvd>Exempt, county, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>951</edomv>
+						<edomvd>Exempt, county, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>952</edomv>
+						<edomvd>Exempt, county, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>953</edomv>
+						<edomvd>Exempt, county, taxable leased property</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>954</edomv>
+						<edomvd>Exempt, county, in lieu of value</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>955</edomv>
+						<edomvd>Exempt, county, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>960</edomv>
+						<edomvd>Exempt, state, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>965</edomv>
+						<edomvd>Exempt, state, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>970</edomv>
+						<edomvd>Exempt, federal, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>971</edomv>
+						<edomvd>Exempt, federal, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>972</edomv>
+						<edomvd>Exempt, federal, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>981</edomv>
+						<edomvd>Exempt, fraternal org, improved</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>982</edomv>
+						<edomvd>Exempt, fraternal org, partially exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>983</edomv>
+						<edomvd>Exempt, fraternal org, taxable leased property</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>984</edomv>
+						<edomvd>Exempt, fraternal org, in lieu of value</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>985</edomv>
+						<edomvd>Exempt, fraternal org, temporarily exempt</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>990</edomv>
+						<edomvd>Exempt, port or municipal property, vacant</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>999</edomv>
+						<edomvd>Exempt, port or municipal property, manufactured structure</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">PROP_CODE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Landuse</attrlabl>
+				<attrdef>Land use category, derived from Prop_code</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>AGR</edomv>
+						<edomvd>Agriculture</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>COM</edomv>
+						<edomvd>Commercial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>FOR</edomv>
+						<edomvd>Forest</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>IND</edomv>
+						<edomvd>Industrial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>MFR</edomv>
+						<edomvd>Multi-family residential</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>PUB</edomv>
+						<edomvd>Public/semi-public</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>RUR</edomv>
+						<edomvd>Rural</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SFR</edomv>
+						<edomvd>Single family residential</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>VAC</edomv>
+						<edomvd>Undeveloped</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LANDUSE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Taxcode</attrlabl>
+				<attrdef>County tax code (levy code in Multnomah County)</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">TAXCODE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">7</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Saledate</attrlabl>
+				<attrdef>Date of the most recent sale of the property (recording)</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SALEDATE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Saleprice</attrlabl>
+				<attrdef>Price of the most recent sale of the property</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SALEPRICE</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>County</attrlabl>
+				<attrdef>County abbreviation</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>C</edomv>
+						<edomvd>Clackamas County</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>M</edomv>
+						<edomvd>Multnomah County</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>W</edomv>
+						<edomvd>Washington County</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">COUNTY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>X_Coord</attrlabl>
+				<attrdef>X Coordinate in Oregon State Plane North</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">X_COORD</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">7</attwidth><atprecis Sync="TRUE">7</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Y_Coord</attrlabl>
+				<attrdef>Y Coordinate in Oregon State Plane North</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Y_COORD</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">6</attwidth><atprecis Sync="TRUE">6</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Juris_city</attrlabl>
+				<attrdef>Jurisdiction corresponding to city boundaries. Doesn't reflect postal or mailing city. Addresses not within a city jurisdiction are given UNINCORPORATED value.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">JURIS_CITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">15</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>GIS_acres</attrlabl>
+				<attrdef>The area of the taxlot in acres calculated from the feature polygon</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">GIS_ACRES</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">18</atprecis><attscale Sync="TRUE">11</attscale></attr>
+			<attr>
+				<attrlabl>Stateclass</attrlabl>
+				<attrdef>State General Property Class</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">STATECLASS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ORTAXLOT</attrlabl>
+				<attrdef>Statewide standard map and tax lot number. The attribute is defined in the Oregon Cadastral Data Exchange Standard.  http://www.oregon.gov/DAS/CIO/GEO/fit/cadastral/docs/CadastralStandard_v3_OGICendorsed.pdf</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">ORTAXLOT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">29</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Metro Data Resource Center</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype></addrtype>
+					<address>600 NE Grand Ave.</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97232</postal>
+				</cntaddr>
+				<cntvoice>503 797-1742</cntvoice>
+				<cntfax>503 797-1909</cntfax>
+				<cntemail>drc@oregonmetro.gov</cntemail>
+			</cntinfo>
+		</distrib>
+		<distliab>The information in this file was derived from digital databases on Metro's GIS. Care was taken in the creation of this file. Metro cannot accept any responsibility for errors, omissions, or positional accuracy. There are no warranties, expressed or implied.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>Shapefile</formname>
+					<transize>223</transize>
+				</digtinfo>
+				<digtopt>
+					<offoptn>
+						<offmedia>DVD or CD-ROM</offmedia>
+						<recfmt>ISO9660</recfmt>
+					</offoptn>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://www.oregonmetro.gov/rlisdiscovery</networkr>
+							</networka>
+						</computer>
+						<accinstr>Email drc@oregonmetro.gov or call 503-797-1742 for further instructions.</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>RLIS subscription required</fees>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd>20141023</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Metro Data Resource Center</cntorg>
+					<cntper>Steve Erickson</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>600 NE Grand Ave.</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97232</postal>
+				</cntaddr>
+				<cntvoice>503 797-1595</cntvoice>
+				<cntfax>503 797-1909</cntfax>
+				<cntemail>steve.erickson@oregonmetro.gov</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+	</metainfo>
+	<Binary>
+		<Thumbnail>
+			<Data EsriPropertyType="PictureX">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</Data>
+		</Thumbnail>
+	</Binary>
+	<dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.0.3397</envirDesc><dataLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">taxlots</resTitle><presForm><PresFormCd value="005" Sync="TRUE"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd value="001" Sync="TRUE"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><Esri><DataProperties><itemProps><itemName Sync="TRUE">taxlots</itemName><imsContentType Sync="TRUE">002</imsContentType><itemSize Sync="TRUE">0.000</itemSize><itemLocation><linkage Sync="TRUE">file://\\CH469C28\E$\4-510\Demos\Demo1\taxlots.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><coordRef><type Sync="TRUE">Projected</type><geogcsn Sync="TRUE">GCS_North_American_1983_HARN</geogcsn><csUnits Sync="TRUE">Linear Unit: Foot (0.304800)</csUnits><projcsn Sync="TRUE">NAD_1983_HARN_StatePlane_Oregon_North_FIPS_3601_Feet_Intl</projcsn><peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.1'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_HARN_StatePlane_Oregon_North_FIPS_3601_Feet_Intl&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983_HARN&amp;quot;,DATUM[&amp;quot;D_North_American_1983_HARN&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Lambert_Conformal_Conic&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,8202099.737532808],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-120.5],PARAMETER[&amp;quot;Standard_Parallel_1&amp;quot;,44.33333333333334],PARAMETER[&amp;quot;Standard_Parallel_2&amp;quot;,46.0],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,43.66666666666666],UNIT[&amp;quot;Foot&amp;quot;,0.3048],AUTHORITY[&amp;quot;EPSG&amp;quot;,2913]]&lt;/WKT&gt;&lt;XOrigin&gt;-111333600&lt;/XOrigin&gt;&lt;YOrigin&gt;-98152500&lt;/YOrigin&gt;&lt;XYScale&gt;37675770.731007516&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.0032808398950131233&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;2913&lt;/WKID&gt;&lt;LatestWKID&gt;2913&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20150114" Time="194815">DeleteField Z:\Documents\Dropbox\School_Dropbox\Teaching\GEOG410\Demos\GitRepo\Demo1\data\taxlots.shp OWNERCITY;OWNERSTATE;OWNERZIP;SITESTRNO;SITEADDR;SITECITY;SITEZIP;LANDVAL;BLDGVAL;TOTALVAL;BLDGSQFT;A_T_ACRES;YEARBUILT;PROP_CODE;LANDUSE;TAXCODE;SALEDATE;SALEPRICE;COUNTY;X_COORD;Y_COORD;JURIS_CITY;STATECLASS;ORTAXLOT</Process></lineage></DataProperties><SyncDate>20150114</SyncDate><SyncTime>12415700</SyncTime><ModDate>20150114</ModDate><ModTime>12415700</ModTime></Esri><distInfo><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><mdHrLv><ScopeCd value="005" Sync="TRUE"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code="2913" Sync="TRUE"></identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">8.1.1</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="taxlots"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20150114</mdDateSt></metadata>

@@ -1,0 +1,2 @@
+# ignore .LOCK files in data directories
+*.LOCK

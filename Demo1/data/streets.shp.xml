@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Metro Data Resource Center</origin>
+				<pubdate>1988</pubdate>
+				<title>Streets</title>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>Regional street network with geocodable addresses. Each street segment has all address components for address matching. Streets are categorized by type for cartographic purposes. A separate annotation layer is available. The streets and address range information is used by 911 centers for dispatch information. Since the accuracy of this information is important for emergency dispatch, they provide updates on a regular basis. Virtually every street in the region is in this data layer.</abstract>
+			<purpose>For locating street addresses and for cartographic products requiring a street base map.</purpose>
+			<supplinf></supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20141024</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>Ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Weekly</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-123.785577699</westbc>
+				<eastbc>-121.440498206</eastbc>
+				<northbc>46.3880499964</northbc>
+				<southbc>44.6838701483</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>Streets</themekey>
+				<themekey>roads</themekey>
+				<themekey>transportation</themekey>
+				<themekey>all streets</themekey>
+				<themekey>detailed streets</themekey>
+				<themekey>geocode</themekey>
+				<themekey>address range</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Portland</placekey>
+				<placekey>Multnomah County</placekey>
+				<placekey>Washington County</placekey>
+				<placekey>Clackamas County</placekey>
+				<placekey>Oregon</placekey>
+			</place>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>This database and GIS data are made available under the Open Database License (ODbL v1) and Database Content License (DbCL v1). See http://www.oregonmetro.gov/rlis-live.</useconst>
+		<browse>
+			<browsen>http://library.oregonmetro.gov/rlisdiscovery/browse_graphic/streets.png</browsen>
+			<browsed>Streets and rivers.</browsed>
+			<browset>PNG</browset>
+		</browse>
+	</idinfo>
+	<dataqual>
+		<logic></logic>
+		<complete></complete>
+		<posacc>
+			<horizpa>
+				<horizpar>The street linework is contained within the street rights-of-way as shown on the tax lot layer.  As the tax lot horizonal accuracy is improved, streets are adjusted accordingly.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<procstep>
+				<procdesc>Acquired street linework and annotation from Oregon Department of Transportation.  This was digitized from 7 1/2 minutes USGS quad sheets.</procdesc>
+				<procdate>1988</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Replaced linework with newly digitized line work which fell within the street rights-of-way from the tax lot layer.  Attributes were transfered from the U.S. Census Bureau TIGER file.  Street names and address ranges were updated using paper maps collected from the three counties.  Thomas Brothers Mapping was the primary contractor.</procdesc>
+				<procdate>1991</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>We deleted types 1600, 1900, 2100, 2200, 3100, 3210, 3220. Streets are no longer shown on the Clark County side of the river. Contact Clark County for detailed street information.</procdesc>
+				<procdate>199804</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>This layer was reprojected to the NAD83/91 projection (also known as HPGN) as part of a conversion of all RLIS map layers.</procdesc>
+				<procdate>199807</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Projection information (.prj file), compatible with ArcGIS 8.1, was added to the layer.</procdesc>
+				<procdate>20010715</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Add XML metadata compatible with ArcCatalog 8.1</procdesc>
+				<procdate>20011031</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>QC street name, addresses, city and zipcodes using E-911 CAD materials for Clackamas County (complete 20020901) and Washington County (complete 20021031).</procdesc>
+				<procdate>20021031</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Hillsboro streets positional accuracy was improved. Streets were snapped to local planimetric data with a +/- 1 tolerance. The City of Hillsboro now maintains their subarea and supplies the data to Metro on a weekly basis.</procdesc>
+				<procdate>20031024</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Fname item (Streetname field/column in shapefile and SDE versions) expanded from 30 to 50 characters in width to accommodate the 50 character width used in the City of Portlands centerline file.</procdesc>
+				<procdate>20060101</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Hillsboro no longer maintains the street segments within the City of Hillsboro; their maintenance has been taken back by Metro.</procdesc>
+				<procdate>20061101</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Streets are now maintained as a master SDE feature class and the shapefile and SDE feature class STREETS.Streets are derived from this. The coverage has been retired.</procdesc>
+				<procdate>20080515</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Unnamed street segments in the City of Portland maintenance area now have their fdpre/prefix, fname/streetname and ftype values all calculated to a blank value to match how unnamed streets are handled throughout the rest of the region.</procdesc>
+				<procdate>20090201</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>In preparation for transferring maintenance of all Washington Co street segments to Washington Co., those segments previously maintained by the City of Hillsboro and indicated in the master regional file with a subarea value of H have had their subarea value changed to W.</procdesc>
+				<procdate>20090311</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>At the request of Clackmas County additional Forest Service roads (type 9000) are now included.</procdesc>
+				<procdate>20090429</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Streets in Washington County are now maintained by Washington County.</procdesc>
+				<procdate>20090701</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Washington County now uses the 9000 (Forest Service road) type.</procdesc>
+				<procdate>20090923</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>The old locator files were removed. These files were not getting updated and were replaced by the RLIS Locator in September 2012.</procdesc>
+				<procdate>20130528</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Added Z values.</procdesc>
+				<procdate>20140725</procdate>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf><esriterm Name="streets1"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="3" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance></plance>
+					<plandu>International foot</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>D_North_American_1983_HARN</horizdn>
+				<ellips></ellips>
+				<semiaxis></semiaxis>
+				<denflat></denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="streets1">
+			<enttyp>
+				<enttypl>Streets.dbf</enttypl>
+				<enttypd>Description of the street segment attributes</enttypd>
+				<enttypds></enttypds>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr>
+				<attrlabl>Length</attrlabl>
+				<attrdef>Length of street segment in feet.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LENGTH</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">18</atprecis><attscale Sync="TRUE">11</attscale></attr>
+			<attr>
+				<attrlabl>Localid</attrlabl>
+				<attrdef>Unique segment identifier.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LOCALID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">6</attwidth><atprecis Sync="TRUE">6</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Zero</attrlabl>
+				<attrdef>Indicates address range contains a leading zero.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>no leading zero</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>contains leading zero (only in Dunthorpe)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">ZERO</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">2</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Prefix</attrlabl>
+				<attrdef>Street prefix</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>E</edomv>
+						<edomvd>East</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>N</edomv>
+						<edomvd>North</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>NE</edomv>
+						<edomvd>Northeast</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>NW</edomv>
+						<edomvd>Northwest</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>S</edomv>
+						<edomvd>South</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SE</edomv>
+						<edomvd>Southeast</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SW</edomv>
+						<edomvd>Southwest</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>W</edomv>
+						<edomvd>West</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">PREFIX</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Streetname</attrlabl>
+				<attrdef>Street name.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">STREETNAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Ftype</attrlabl>
+				<attrdef>Street feature type (Ave, Blvd, St, etc.).</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">FTYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Direction</attrlabl>
+				<attrdef>Street/traffic direction type.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>EB</edomv>
+						<edomvd>east bound</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>NB</edomv>
+						<edomvd>north bound</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>SB</edomv>
+						<edomvd>south bound</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>WB</edomv>
+						<edomvd>west bound</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">DIRECTION</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Leftadd1</attrlabl>
+				<attrdef>Beginning of address range on left side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LEFTADD1</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">11</attwidth><atprecis Sync="TRUE">11</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Leftadd2</attrlabl>
+				<attrdef>End of address range on left side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LEFTADD2</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">11</attwidth><atprecis Sync="TRUE">11</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Rgtadd1</attrlabl>
+				<attrdef>Beginning of address range on right side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RGTADD1</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">11</attwidth><atprecis Sync="TRUE">11</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Rgtadd2</attrlabl>
+				<attrdef>End of address range on left side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RGTADD2</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">11</attwidth><atprecis Sync="TRUE">11</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Leftzip</attrlabl>
+				<attrdef>ZIP code on left side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LEFTZIP</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Rightzip</attrlabl>
+				<attrdef>ZIP code on right side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RIGHTZIP</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Type</attrlabl>
+				<attrdef>Street classification.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>1110</edomv>
+						<edomvd>Freeway</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1120</edomv>
+						<edomvd><![CDATA[Ramps; interchanges & feeders]]></edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1121</edomv>
+						<edomvd>On-ramp (only)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1122</edomv>
+						<edomvd>Off-ramp (only)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1123</edomv>
+						<edomvd>On- and off-ramp (combination)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1200</edomv>
+						<edomvd>Highway</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1221</edomv>
+						<edomvd>On ramp (only) to highway  (in the area maintained by the City of Portland only)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1222</edomv>
+						<edomvd>Off ramp (only) to highway  (in the area maintained by the City of Portland only)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1223</edomv>
+						<edomvd>On/Off ramp to highway (in the area maintained by the City of Portland only)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1300</edomv>
+						<edomvd>Primary arterial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1320</edomv>
+						<edomvd>Primary arterial linkage.  Ramp/slip road used to enter or exit a 1300 or lower class road</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1400</edomv>
+						<edomvd>Secondary arterial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1421</edomv>
+						<edomvd>Secondary arterial linkage. Ramp/slip road to enter or exit a 1400 or lower class road.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1450</edomv>
+						<edomvd>Other arterial</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1471</edomv>
+						<edomvd>Minor residential linkage. Ramp/slip road to enter or exit a 1450 or lower class road.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1500</edomv>
+						<edomvd>Minor streets</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1521</edomv>
+						<edomvd>Local street to local street connector (Portland only, subarea = 'P').</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1550</edomv>
+						<edomvd>Minor street -named, but without valid addressing (Clackamas County only, subarea = 'C')</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1560</edomv>
+						<edomvd>Minor street -unnamed and without valid addressing (Clackamas County only, subarea = 'C')</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1600</edomv>
+						<edomvd>Alley.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1700</edomv>
+						<edomvd>Private named road; private right-of-way exists</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1780</edomv>
+						<edomvd>Private named road. Planned</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>1800</edomv>
+						<edomvd>Unnamed driveway; private right-of-way exists</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>2000</edomv>
+						<edomvd>Unimproved road.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5101</edomv>
+						<edomvd>Freeway with rapid transit. Shared right-of-way.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5201</edomv>
+						<edomvd>Highway with rapid transit. Shared right-of-way.</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5301</edomv>
+						<edomvd>Primary arterial with rapid transit. Shared right-of-way</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5401</edomv>
+						<edomvd>Secondary with rapid transit. Shared right-of-way</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5451</edomv>
+						<edomvd>Major arterial. Shared right-of-way</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5500</edomv>
+						<edomvd>Minor with railroad. Shared right-of-way</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>5501</edomv>
+						<edomvd>Minor with rapid transit</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>8224</edomv>
+						<edomvd>Unknown type (only in Yamhill County)</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<edom>
+						<edomv>9000</edomv>
+						<edomvd>Forest Service road</edomvd>
+						<edomvds></edomvds>
+					</edom>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">TYPE</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">6</attwidth><atprecis Sync="TRUE">6</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Lcounty</attrlabl>
+				<attrdef>County on left side of Street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LCOUNTY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Rcounty</attrlabl>
+				<attrdef>County on right side of Street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RCOUNTY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Lcity</attrlabl>
+				<attrdef>City on left side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">LCITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Rcity</attrlabl>
+				<attrdef>City on right side of street.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RCITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Up_date</attrlabl>
+				<attrdef>Date street segment last revised.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">UP_DATE</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Cr_date</attrlabl>
+				<attrdef>Creation date for street segment.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">CR_DATE</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>F_ZLEV</attrlabl>
+				<attrdef>Ordinal elevation for FROM end of segment.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">F_ZLEV</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>T_ZLEV</attrlabl>
+				<attrdef>Ordinal elevation for TO end of segment.</attrdef>
+				<attrdefs></attrdefs>
+				<attrdomv>
+					<udom>NA</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">T_ZLEV</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">5</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Metro Data Resource Center</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype></addrtype>
+					<address>600 NE Grand Ave.</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97232</postal>
+				</cntaddr>
+				<cntvoice>503 797-1742</cntvoice>
+				<cntfax>503 797-1909</cntfax>
+				<cntemail>drc@oregonmetro.gov</cntemail>
+			</cntinfo>
+		</distrib>
+		<distliab>The information in this file was derived from digital databases on Metro's GIS. Care was taken in the creation of this file. Metro cannot accept any responsibility for errors, omissions, or positional accuracy. There are no warranties, expressed or implied.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>Shapefile</formname>
+					<transize>15</transize>
+				</digtinfo>
+				<digtopt>
+					<offoptn>
+						<offmedia>DVD or CD-ROM</offmedia>
+						<recfmt>ISO9660</recfmt>
+					</offoptn>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://www.oregonmetro.gov/rlisdiscovery</networkr>
+							</networka>
+						</computer>
+						<accinstr>Email drc@oregonmetro.gov or call 503-797-1742 for further instructions.</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>No cost</fees>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd>20141024</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Metro Data Resource Center</cntorg>
+					<cntper>Jeremy Murray</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>600 NE Grand Ave.</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97232</postal>
+				</cntaddr>
+				<cntvoice>503-813-7561</cntvoice>
+				<cntfax>503-797-1909</cntfax>
+				<cntemail>jeremy.murray@oregonmetro.gov</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+	</metainfo>
+	<Binary>
+		<Thumbnail>
+			<Data EsriPropertyType="PictureX">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</Data>
+		</Thumbnail>
+	</Binary>
+	<dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.0.3397</envirDesc><dataLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">streets1</resTitle><presForm><PresFormCd value="005" Sync="TRUE"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd value="001" Sync="TRUE"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><Esri><DataProperties><itemProps><itemName Sync="TRUE">streets1</itemName><imsContentType Sync="TRUE">002</imsContentType><itemSize Sync="TRUE">0.000</itemSize><itemLocation><linkage Sync="TRUE">file://\\CH469C28\E$\4-510\Demos\Demo1\streets1.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><coordRef><type Sync="TRUE">Projected</type><geogcsn Sync="TRUE">GCS_North_American_1983_HARN</geogcsn><csUnits Sync="TRUE">Linear Unit: Foot (0.304800)</csUnits><projcsn Sync="TRUE">NAD_1983_HARN_StatePlane_Oregon_North_FIPS_3601_Feet_Intl</projcsn><peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.1'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_HARN_StatePlane_Oregon_North_FIPS_3601_Feet_Intl&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983_HARN&amp;quot;,DATUM[&amp;quot;D_North_American_1983_HARN&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Lambert_Conformal_Conic&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,8202099.737532808],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-120.5],PARAMETER[&amp;quot;Standard_Parallel_1&amp;quot;,44.33333333333334],PARAMETER[&amp;quot;Standard_Parallel_2&amp;quot;,46.0],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,43.66666666666666],UNIT[&amp;quot;Foot&amp;quot;,0.3048],AUTHORITY[&amp;quot;EPSG&amp;quot;,2913]]&lt;/WKT&gt;&lt;XOrigin&gt;-111333600&lt;/XOrigin&gt;&lt;YOrigin&gt;-98152500&lt;/YOrigin&gt;&lt;XYScale&gt;37675770.731007516&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.0032808398950131233&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;2913&lt;/WKID&gt;&lt;LatestWKID&gt;2913&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20150114" Time="194734">DeleteField Z:\Documents\Dropbox\School_Dropbox\Teaching\GEOG410\Demos\GitRepo\Demo1\data\streets.shp LENGTH;LOCALID;PREFIX;STREETNAME;FTYPE;DIRECTION;LEFTADD1;LEFTADD2;RGTADD1;RGTADD2;LEFTZIP;RIGHTZIP;TYPE;LCOUNTY;RCOUNTY;LCITY;RCITY;UP_DATE;CR_DATE;F_ZLEV;T_ZLEV</Process></lineage></DataProperties><SyncDate>20150114</SyncDate><SyncTime>12471200</SyncTime><ModDate>20150114</ModDate><ModTime>12471200</ModTime></Esri><distInfo><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><mdHrLv><ScopeCd value="005" Sync="TRUE"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code="2913" Sync="TRUE"></identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">8.1.1</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="streets1"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20150114</mdDateSt></metadata>
