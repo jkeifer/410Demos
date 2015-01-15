@@ -39,7 +39,7 @@ straight, and our data may not all be in the correct reference system.
 
 This repo includes the following files and folder:
 
-    - demo1.py -- the python script written for this demo
-    - data.mxd -- a ArcMap document displaying all the data layers so
-      we can see with what data we are working
-    - data/ -- a folder containing shapefile data for this analysis
+- demo1.py -- the python script written for this demo
+- data.mxd -- a ArcMap document displaying all the data layers so
+  we can see with what data we are working
+- data/ -- a folder containing shapefile data for this analysis
